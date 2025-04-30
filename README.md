@@ -7,22 +7,6 @@ Analyses included product health scoring, RFM segmentation, and market basket in
 
 The data architecture was designed to apply core tools and processes as part of a learning exercise and will be iterated over time to improve efficiency, scalability, and analytical depth. Additional analyses and architectural enhancements are planned as the project evolves.
 
-
-
-## Table of Content
-
-- [Dataset Used](#dataset-used)
-- [Technologies](technologies)
-- [Data Pipeline Architecture](#data-pipeline-architecture)
-- [Step 1: Data Ingestion and Storage](#step-1-data-ingestion-and-storage)
-- [Step 2: Staging](#step-2-staging) 
-- [Step 3.1: Transformation and Analysis: Python](#step-31-transformation-and-analysis-python)
-- [Step 3.2: Transformation and Analysis: SQL](#step-32-transformation-and-analysis-sql)
-- [Step 4: Serving](#step-4-serving)
-- [Step 5.1: BI & Insights - Dashboard](#step-51-bi-insights-dashboard)
-- [Step 5.2: BI & Insights - Executive Deck](#step-52-bi-insights-executive-deck)
-
-
 ## Dataset Used
 This project uses anonymized e-commerce transaction data from Modecraft, shared as part of the Dubstech x University of Washington Datathon 2025. The dataset contains detailed order-level information such as invoice number, product stock code, item description, quantity purchased, invoice date and time, unit price, customer ID, and country.
 
@@ -46,9 +30,8 @@ The following technologies are used to build this project:
 Files in the following stages:
 - Step 1: Data Ingestion and Storage
 - Step 2: Staging
-- Step 3.1: Transformation: Feature Engineering, and Data Analysis (Python) x
-- Step 3.2: Transformation: Exploratory Data Analysis (SQL) x
-- Step 4: Serving
+- Step 3.1: Transformation - Python Feature Engineering, and Data Analysis + Step 4.1: Staging [code](https://github.com/maicorebong/Datathon2025-DubsTechUW/blob/main/step3-4-modecraft-python-analysis.py)
+- Step 3.2: Transformation - SQL Exploratory Data Analysis + Step 4.1: Staging [code]
 - Step 5.1: BI & Insights: Dashboard x
 - Step 5.2: BI & Insights: Deck x
 
@@ -62,8 +45,9 @@ Configured Shared Access Signature (SAS) settings to enable secure and controlle
 ![3blob](https://github.com/user-attachments/assets/c8314968-f57b-4477-8bc9-06faeb00a0a9)
 ![2stage](https://github.com/user-attachments/assets/01baefcb-1d7c-4cd1-a84a-23ae8ac040b3)
 
-## Step 3.1: Transformation and Analysis: Python
-Set up VS Code environment by installing necessary Python packages and session parameters to connect to Snowflake with Python
+## Step 3.1: Python Transformation and Analysis + Step 4: Serving
+
+With the data staged in Snowflake, the VS Code environment was configured by installing required Python packages and setting session parameters to enable Snowflake-Python integration.
 ![3connect](https://github.com/user-attachments/assets/e1eea522-6816-4de0-b9ab-840cca3adfe3)
 
 Data cleaning and feature engineering
@@ -78,6 +62,18 @@ Performing Market Basket Analysis
 Performing RFM Analysis
 ![3analysis3](https://github.com/user-attachments/assets/538f71aa-0718-4c9e-8e2d-d32121702447)
 
-## Step 3.2: Transformation and Analysis: SQL
+Once dataframes have been set up via Python, these mini tables will be uploaded to Snowflake which will serve as our data marts.
+![serving](https://github.com/user-attachments/assets/310a6400-7bd6-44f8-b982-c3cb1415a495)
+
+
+## Step 3.2: SQL Transformation and Analysis + Step 4: Serving
+
+Exploratory Data Analysis (EDA) was conducted directly in Snowflake using SQL. For each insight, a dedicated query was written to generate aggregated results which were then saved as data marts. The process includes table creation or replacement, followed by data insertion using CREATE OR REPLACE and INSERT INTO statements. This ensures reproducibility and modular access to curated insights in downstream analyses or dashboards.
+![sql1](https://github.com/user-attachments/assets/5f9f04ef-fa0d-4c5d-af00-71697f56a288)
+![sql2](https://github.com/user-attachments/assets/552400a6-c7e6-4796-8991-fc21f2cc80f7)
+![sql3](https://github.com/user-attachments/assets/1254c9dc-ff1c-434d-8021-eea14a60a260)
+![sql4](https://github.com/user-attachments/assets/ec76cd81-e7b0-4053-a56e-641dc5d68602)
+![sql5](https://github.com/user-attachments/assets/1aa74eb0-7510-41c6-a6df-2fa4970f4e00)
+
 
 
