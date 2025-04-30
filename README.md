@@ -39,7 +39,7 @@ The following technologies are used to build this project:
 - Dashboard: Tableau
 
 ## Data Pipeline Architecture
-<img width="682" alt="Untitled" src="https://github.com/user-attachments/assets/c3c8bbc0-4ecd-4737-b3e6-0de784063029" />
+![pipeline](https://github.com/user-attachments/assets/a11b140e-b22a-43b3-bc54-723879e5e055)
 
 Files in the following stages:
 - Step 1: Data Ingestion and Storage
