@@ -76,7 +76,8 @@ Exploratory Data Analysis (EDA) was conducted directly in Snowflake using SQL. F
 ![sql5](https://github.com/user-attachments/assets/1aa74eb0-7510-41c6-a6df-2fa4970f4e00)
 
 ## Step 5.1: BI & Insights: Dashboard
-[Dashboard Demo: Tableau link](https://public.tableau.com/views/Modecraft-Ecommerce-Data-Analysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+Dashboard Demo: [Tableau link](https://public.tableau.com/views/Modecraft-Ecommerce-Data-Analysis/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ![Dashboard Demo](https://github.com/user-attachments/assets/5257ad12-286e-4a8f-b9bb-af5caf386394)
 
 
