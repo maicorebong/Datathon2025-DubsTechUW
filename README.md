@@ -32,7 +32,7 @@ Files in the following stages:
 - Step 2: Staging
 - Step 3.1: Transformation - Python Feature Engineering, and Data Analysis + Step 4.1: Staging [code](https://github.com/maicorebong/Datathon2025-DubsTechUW/blob/main/step3-4-modecraft-python-analysis.py)
 - Step 3.2: Transformation - SQL Exploratory Data Analysis + Step 4.1: Staging [code]
-- Step 5.1: BI & Insights: Dashboard x
+- Step 5.1: BI & Insights: Dashboard
 - Step 5.2: BI & Insights: Deck x
 
 ### Step 1: Data Ingestion and Storage
@@ -75,5 +75,7 @@ Exploratory Data Analysis (EDA) was conducted directly in Snowflake using SQL. F
 ![sql4](https://github.com/user-attachments/assets/ec76cd81-e7b0-4053-a56e-641dc5d68602)
 ![sql5](https://github.com/user-attachments/assets/1aa74eb0-7510-41c6-a6df-2fa4970f4e00)
 
+## Step 5.1: BI & Insights: Dashboard
+![Dashboard Demo](https://github.com/user-attachments/assets/5257ad12-286e-4a8f-b9bb-af5caf386394)
 
 
