@@ -80,4 +80,7 @@ Dashboard Demo: [Tableau link](https://public.tableau.com/views/Modecraft-Ecomme
 
 ![Dashboard Demo](https://github.com/user-attachments/assets/072c0c63-f799-47be-a8e7-246ba09907a5)
 
+## Step 5.2: BI & Insights: Deck
+Powerpoint: [Insights Deck](https://github.com/maicorebong/Datathon2025-DubsTechUW/blob/main/Step5-2-Modecraft-Ecommerce-Deck.pdf)
+
 
